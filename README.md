@@ -1,4 +1,4 @@
-# MoneyConvert - Currency Converter App
+# MoneyConvert - Currency Converter App 💲💸
 
 CoinConvert is a simple and user-friendly currency converter application that allows you to quickly convert between different currencies.
 
