@@ -22,9 +22,9 @@ body {
 }
 
 .wrapper {
-  width: 370px;
-  padding: 30px;
-  border-radius: 7px;
+  width: 400px;
+  padding:30px;
+  border-radius: 50px;
   background: #fff;
   box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.05);
   transition: background-color 0.3s ease; /* Added transition for smooth effect */
@@ -130,7 +130,7 @@ form .exchange-rate {
 }
 
 form button {
-  height: 52px;
+  height: 50px;
   color: #000000;
   font-size: 17px;
   cursor: pointer;
@@ -159,4 +159,79 @@ form button:hover {
 .exchange-rate {
   text-align: center;
   color: #555;
+}
+
+/* Common styles for both images */
+.image-left,
+.image-right {
+    border-radius: 15px;
+    display: block; /* Change from float to display: block for proper alignment */
+    margin: 20px auto; /* Center-align the images and add space above and below the wrapper */
+}
+
+/* Style for the left image */
+.image-left {
+    margin-bottom: 30px; /* Add space below the left image */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+}
+
+/* Style for the right image */
+.image-right {
+    margin-top: 20px; /* Add space above the right image */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+}
+
+/* Style the left arrow */
+.image-left::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    vertical-align: middle; /* Vertically align the arrow in the middle of the gap */
+    border-width: 10px 0 10px 15px; /* Adjust the arrow size and direction */
+    border-color: transparent transparent transparent #000; /* Adjust the arrow color */
+}
+
+/* Style the right arrow */
+.image-right::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    vertical-align: middle; /* Vertically align the arrow in the middle of the gap */
+    border-width: 10px 15px 10px 0; /* Adjust the arrow size and direction */
+    border-color: transparent #000 transparent transparent; /* Adjust the arrow color */
+}
+
+
+/* Style Font Awes
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+    /* Adjust styles for screens up to 768px wide (e.g., tablets and smaller laptops) */
+    .image-left,
+    .image-right {
+        float: none; /* Remove floating on smaller screens */
+        margin: 0 auto 20px; /* Center-align and add space between the images */
+        display: block;
+        text-align: center; /* Center-align the images and icons */
+    }
+
+    /* Adjust styles for the arrow icons on smaller screens */
+    .image-left::before,
+    
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust styles for screens up to 480px wide (e.g., mobile phones) */
+    .image-left,
+    .image-right {
+        margin: 0 auto 10px; /* Center-align and reduce space between the images */
+    }
+
+    /* Adjust styles for the arrow icons on smaller screens */
+    .image-left::before,
+    
 }
