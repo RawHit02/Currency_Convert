@@ -1,4 +1,5 @@
 let country_list = {
+    "INR" : "IN",
     "AED" : "AE",
     "AFN" : "AF",
     "XCD" : "AG",
@@ -65,7 +66,6 @@ let country_list = {
     "HUF" : "HU",
     "IDR" : "ID",
     "ILS" : "IL",
-    "INR" : "IN",
     "IQD" : "IQ",
     "IRR" : "IR",
     "ISK" : "IS",
